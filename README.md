@@ -29,7 +29,7 @@ SmartEats empowers users to make informed, healthier food choices by instantly a
 - Python Flask
 - Flask-RESTful API
 - OpenCV & PIL for image processing
-- ZBar barcode decoder
+- pyzbar (Python wrapper for ZBar barcode decoder)
 
 **Data Source:**
 - Open Food Facts API
@@ -57,12 +57,12 @@ Access the application at `http://localhost:8000`
 ## 📈 Health Score Algorithm
 
 SmartEats calculates healthiness scores based on:
-- **Nutritional Content (70%)**: Fiber, protein, vitamins, minerals vs. saturated fats, trans fats, sodium, and calories
-- **Ingredient Quality (30%)**: Whole food content, organic ingredients, absence of artificial additives and harmful ingredients
+- **Nutritional Content (70 points max)**: Fiber, protein, vitamins, minerals vs. saturated fats, trans fats, sodium, and calories
+- **Ingredient Quality (30 points max)**: Whole food content, organic ingredients, absence of artificial additives and harmful ingredients
 
 **Score Categories:**
 - 90-100: Excellent
-- 50-89: Average  
+- 50-89: Average
 - 0-49: Poor
 
 ## 🤝 Contributing
